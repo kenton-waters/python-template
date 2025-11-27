@@ -1,0 +1,7 @@
+{
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnPaste": true,
+    "ruff.format.backend": "internal",
+    "python.languageServer": "Pylance"
+}

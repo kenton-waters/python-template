@@ -25,6 +25,27 @@ To upgrade a package, run uv lock with the --upgrade-package flag:
 uv lock --upgrade-package requests
 ```
 
+## Ruff
+Use Ruff thusly for linting and formatting:
+```
+uvx ruff check           # Lint all files in the current directory (and any subdirectories).
+uv run ruff check --fix  # Fix problems identified by 'check'.
+uvx ruff format          # Format all files in the current directory (and any subdirectories).
+```
+
+It was installed thusly:
+```
+uv add --dev ruff  # Add Ruff to your project.
+```
+
+## VS Code
+Extensions:
+* Python (by Microsoft) includes:
+    * Pylance
+    * Python Debugger
+    * Python Environments
+* Ruff (by Astral Software)
+
 ## Nix
 Enter the dev shell (that has uv) with `nix develop`.
 
